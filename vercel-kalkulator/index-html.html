@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Lingkaran</title>
+    <link rel="stylesheet" href="tugas12.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hitung Keliling Lingkaran (pi = 3,14) </h1>
+        <form id="calculatorForm" onsubmit="return false">
+            <div class="input-group">
+                <label for="jari-jari">Jari-jari (cm):</label>
+                <input type="number" id="jari-jari" name="jari-jari" required step="any">
+            </div>
+            
+            <button type="button" onclick="hitungKeliling()">Hitung Keliling Lingkaran</button>
+            
+            <div class="result">
+                <p>Keliling: <span id="hasil">-</span></p>
+            </div>
+        </form>
+    </div>
+    <script src="script-js.js"></script>
+</body>
+</html>
